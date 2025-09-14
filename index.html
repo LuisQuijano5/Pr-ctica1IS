@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera página web</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+    <body>
+        <header class="hero">
+            <div class="container">
+                <h1>Bienvenidos a nuesta prágina web!</h1>
+                <h4>PEÑA8.0</h4>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="controls-section">
+                <button id="colorButton" class="btn btn-primary">Cambiar color de fondo</button>
+                <button id="nextParticipant" class="btn btn-secondary">Siguiente Participante</button>
+                <button id="fontSizeButton" class="btn btn-secondary">Cambiar tamaño de letra</button>
+            </section>
+
+            <section class="team-section">
+                <h2 class="section-title">Integrantes del Equipo</h2>
+                <div id="member-card" class="card">
+                    <img id="member-img" alt="Foto del integrante">
+                    <div class="member-info">
+                        <p id="member-name" class="member-name"></p>
+                        <p id="member-desc" class="member-desc"></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="clock-section">
+                <h2 class="section-title">Reloj</h2>
+                <form name="form_reloj">
+                    <input type="text" name="reloj" size="10" class="clock-display" id="clock-text" readonly>
+                </form>
+            </section>
+        </main>
+        <script src="js/script.js"></script>
+    </body>
+</html>
